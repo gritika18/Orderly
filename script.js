@@ -210,7 +210,7 @@ class Game {
                 newButton.textContent = "Play again";
             }
             else{
-                if(move < 200 && move > 150){
+                if(move < 250 && move > 150){
                     minMove=150;
                     document.querySelector(".message").textContent = "You win!";
                     count++;
