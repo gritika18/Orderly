@@ -230,6 +230,8 @@ class Game {
                 }
                 else if(move<100){
                     document.querySelector(".message").textContent = "You have mastered the game!";
+                    alert('You are already at master level. We cannot decide your rank.Thankyou for playing Master!');
+                    newButton.textContent = "Play again";
                 }
                 else{
                     document.querySelector(".message").textContent = "You lost! Better luck next time ";
