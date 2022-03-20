@@ -242,7 +242,8 @@ class Game {
             document.querySelector(".level").textContent = `Level: ${count}`;
 
         } else {
-            document.querySelector(".message").textContent = "Arrange Blocks in Ascending Order within 250 moves to win the level !!!";
+            if(minMove===0) document.querySelector(".message").textContent = "Arrange Blocks in Ascending Order within 250 moves to win the level !!!";
+           else document.querySelector(".message").textContent = `Arrange Blocks in Ascending Order within ${minMove} moves to win the level !!!`;
         }
     }
 }
