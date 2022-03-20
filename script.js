@@ -204,7 +204,6 @@ class Game {
 
         // Render message
         if (status === "won") {
-            minMove=130;
             if(minMove!==0 && move>minMove){
                 count=0;
                 document.querySelector(".message").textContent = "You lost! Better luck next time ";
